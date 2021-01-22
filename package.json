@@ -1,0 +1,31 @@
+{
+  "name": "bootstrap-pixel-icons",
+  "version": "0.1.0",
+  "description": "A pixel style icons based on bootstrap icons'",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf svg",
+    "svg": "npm run clean && node scripts/generate-svg.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex1990/bootstrap-pixel-icons.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "icon",
+    "iconfont",
+    "pixel"
+  ],
+  "author": "Alex Chao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alex1990/bootstrap-pixel-icons/issues"
+  },
+  "homepage": "https://github.com/Alex1990/bootstrap-pixel-icons#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.4"
+  }
+}
