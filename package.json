@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf svg",
-    "svg": "npm run clean && node scripts/generate-svg.js",
+    "svg": "npm run clean && npm run generate-svg && npm run minify-svg",
+    "generate-svg": "node scripts/generate-svg.js",
+    "minify-svg": "svgo svg/*.svg",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +28,7 @@
   "homepage": "https://github.com/Alex1990/bootstrap-pixel-icons#readme",
   "devDependencies": {
     "rimraf": "^3.0.2",
-    "shelljs": "^0.8.4"
+    "shelljs": "^0.8.4",
+    "svgo": "^1.3.2"
   }
 }
