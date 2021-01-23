@@ -2,6 +2,11 @@
   "name": "bootstrap-pixel-icons",
   "version": "0.1.0",
   "description": "A pixel style icons based on bootstrap icons'",
+  "files": [
+    "fonts",
+    "svg",
+    "bootstrap-pixel-icons.css"
+  ],
   "scripts": {
     "clean": "rimraf svg fonts",
     "build": "npm run clean && npm run svg && npm run iconfont",
