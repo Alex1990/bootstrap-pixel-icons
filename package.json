@@ -2,7 +2,6 @@
   "name": "bootstrap-pixel-icons",
   "version": "0.1.0",
   "description": "A pixel style icons based on bootstrap icons'",
-  "main": "index.js",
   "scripts": {
     "clean": "rimraf svg fonts",
     "build": "npm run clean && npm run svg && npm run iconfont",
@@ -29,7 +28,9 @@
   },
   "homepage": "https://github.com/Alex1990/bootstrap-pixel-icons#readme",
   "devDependencies": {
+    "async": "^3.2.0",
     "gulp": "^4.0.2",
+    "gulp-consolidate": "^0.2.0",
     "gulp-iconfont": "^11.0.0",
     "rimraf": "^3.0.2",
     "shelljs": "^0.8.4",
