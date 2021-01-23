@@ -10,7 +10,7 @@
   font-style: normal;
 }
 
-.px:before {
+[class^="px-"]:before {
   display: inline-block;
   font-family: "bootstrap-pixel-icons";
   font-style: normal;
