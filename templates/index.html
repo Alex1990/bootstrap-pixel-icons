@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap-pixel-icons</title>
+    <link rel="stylesheet" href="bootstrap-pixel-icons.css">
+    <style>
+        body {
+            margin: 0;
+            font: 16px/1.6 sans-serif;
+        }
+
+        h1 {
+            margin: 2em 0 1em;
+            border-bottom: 2px solid #eee;
+        }
+
+        h2 {
+            margin: 1.5em 0 1em;
+            border-bottom: 1px solid #eee;
+        }
+
+        pre {
+            margin-bottom: 1em;
+            padding: 1em;
+            font-size: inherit;
+            background: #f8f8f8;
+        }
+
+        .page {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .icons li {
+            margin: 0 20px 20px 0;
+            flex: auto 0 0;
+            width: 128px;
+            text-align: center;
+        }
+
+        .icon {
+            height: 80px;
+            line-height: 80px;
+            background: #f8f8f8;
+            font-size: 32px;
+        }
+        
+        .icon-name {
+            padding: 20px 0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>bootstrap-pixel-icons</h1>
+        <h2>Install</h2>
+        <p><strong>Npm</strong></p>
+        <pre><code>npm i bootstrap-pixel-icons</code></pre>
+        <h2>Usage</h2>
+        <p><strong>Import css</strong></p>
+        <pre><code>@import "bootstrap-pixel-icons/bootstrap-pixel-icons.css"</code></pre>
+        <p><strong>Use in html</strong></p>
+        <pre><code>&lt;i class="px-alarm"&gt;&lt;/i&gt;</code></pre>
+        <h2>Icons</h2>
+        <ul class="icons">
+            <% _.each(glyphs, function (glyph) { %>        <li>
+                <div class="icon"><i class="<%= className %>-<%= glyph.name %>"></i></div>
+                <div class="icon-name"><%= glyph.name %></div>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+</body>
+</html>

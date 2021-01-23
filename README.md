@@ -12,10 +12,13 @@ npm i bootstrap-pixel-icons
 
 ## Usage
 
+**Import css**
+
 ```css
-/* import */
 @import "bootstrap-pixel-icons/bootstrap-pixel-icons.css";
 ```
+
+**Use in html**
 
 ```html
 <i class="px-alarm"></i>

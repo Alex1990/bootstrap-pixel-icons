@@ -15,12 +15,23 @@ gulp.task('iconfont', (done) => {
 
   Async.parallel([
     cb => {
-      iconStream.on('glyphs', (glyphs, options) => {
+      iconStream.on('glyphs', (glyphs) => {
         gulp.src('templates/bootstrap-pixel-icons.css')
           .pipe(consolidate('lodash', {
             glyphs,
             fontName: 'bootstrap-pixel-icons',
             fontPath: './fonts/',
+            className: 'px'
+          }))
+          .pipe(gulp.dest('./'))
+          .on('finish', cb)
+      })
+    },
+    cb => {
+      iconStream.on('glyphs', (glyphs) => {
+        gulp.src('templates/index.html')
+          .pipe(consolidate('lodash', {
+            glyphs,
             className: 'px'
           }))
           .pipe(gulp.dest('./'))
