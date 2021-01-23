@@ -23,3 +23,7 @@ npm i bootstrap-pixel-icons
 ```html
 <i class="px-alarm"></i>
 ```
+
+## Icons
+
+![icon list](./assets/screenshot.png)
